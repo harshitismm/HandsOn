@@ -58,7 +58,6 @@ public class Patterns {
             while (j <= n) {
                 System.out.print(c + " ");
                 c++;
-                ;
                 j++;
             }
             System.out.println();
