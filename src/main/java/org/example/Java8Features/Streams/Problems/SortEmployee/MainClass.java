@@ -19,5 +19,13 @@ public class MainClass {
         //Sort the employees in descending order by their emp id
         List<Employee> list2 =employees.stream().sorted((a,b)->(int)(b.getId()-a.getId())).toList();
         System.out.println(list2);
+
+        //Find the employee with min id
+        Employee empminid =employees.stream().min((a, b)->a.getId()-b.getId()).get();
+        System.out.println(empminid);
+
+        //Find the employee with max id
+        Employee empmaxid =employees.stream().max((a, b)->a.getId()-b.getId()).get();
+        System.out.println(empmaxid);
     }
 }
